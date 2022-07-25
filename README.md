@@ -30,6 +30,9 @@
 
 ```bash
 $ npm install
+
+# run docker container
+docker run --name incode -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
 ```
 
 ## Running the app
