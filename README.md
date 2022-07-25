@@ -33,6 +33,9 @@ $ npm install
 
 # run docker container
 docker run --name incode -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+
+npm run build
+npm run migration:run
 ```
 
 ## Running the app
@@ -41,11 +44,6 @@ docker run --name incode -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
 # development
 $ npm run start
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
 ## Test
